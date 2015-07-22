@@ -1,0 +1,66 @@
+body {
+  background-color: #3F51B5;
+  color: white
+}
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+.buttonGp {
+  display: none;
+}
+
+th:first-child {
+  display: none;
+}
+
+td:first-child {
+  display: none;
+}
+
+#mainTable {
+  margin-top: 30px;
+}
+
+.container {
+  padding-left: 30px
+}
+
+#inputColumn {
+  position: fixed;
+  background-color: #607D8B;
+  height: 100%
+}
+
+h1 {
+  font-family: MontereyFLF-Bold;
+  font-size: 50px
+}
+
+th {
+  font-family: MontereyFLF;
+  font-size: 20px
+}
+td {
+  min-width: 90px
+}
+label {
+  font-family: MontereyFLF;
+  font-size: 20px
+}
+
+@font-face {
+  font-family: "MontereyFLF-Bold";
+  src: url('../fonts/MontereyFLF-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "MontereyFLF";
+  src: url('../fonts/MontereyFLF.ttf') format('truetype');
+}
+MontereyFLF

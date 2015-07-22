@@ -3,12 +3,53 @@
 <head>
   <title></title>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="js/application.js"></script>
 
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/custom.css" rel="stylesheet">
 </head>
 <body>
+
+
+  <div class = "col-sm-3" id="inputColumn">
+    <form id="addEventForm">
+      <h1 class="hideWhenSelected">Submit event</h1>
+      <h1 class="buttonGp">Edit event</h1>
+      <div class="form-group">
+        <label for="User">User</label>
+        <input type="text" class="form-control" id="userInput" placeholder="Me">
+      </div>
+      <div class="form-group">
+        <label for="Event">Event</label>
+        <input type="text" class="form-control" id="eventInput" placeholder="BBQ">
+      </div>
+      <div class="form-group">
+        <label for="Date">Date</label>
+        <input type="text" class="form-control" id="dateInput" placeholder="Today">
+      </div>
+      <div class="form-group">
+        <label for="Time">Time</label>
+        <input type="text" class="form-control" id="timeInput" placeholder="Later">
+      </div>
+      <div class="form-group">
+        <label for="Notes">Notes</label>
+        <input type="text" class="form-control" id="notesInput" placeholder="Something">
+      </div><br>
+      <button class="btn btn-default hideWhenSelected" id="submitButton">Submit</button>
+      <button class="btn btn-default buttonGp" id="editButton">Edit</button>
+      <button class="btn btn-default buttonGp" id="likeButton">Like</button>
+      <button class="btn btn-default buttonGp" id="dislikeButton">Dislike</button>
+      <button class="btn btn-default buttonGp" id="deleteButton">Delete</button>
+    </form>
+  </div>
+
+  <div class = "container col-sm-offset-3 col-sm-9">
+    <h1>Week 4 social events</h1>
+    <div id="mainBody">
+      <table id="mainTable">
+      </table>
+    </div>
+  </div>
 </body>
 </html>
